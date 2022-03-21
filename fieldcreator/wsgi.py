@@ -12,6 +12,6 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fieldcreator.settings")
 
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
-from importlib import reload
+
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
