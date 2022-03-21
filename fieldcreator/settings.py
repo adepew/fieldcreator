@@ -1,6 +1,5 @@
 import os
 import urllib.parse
-from importlib import reload
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
