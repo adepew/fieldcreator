@@ -12,8 +12,9 @@ import datetime
 import sys
 import traceback
 
-reload(sys)
-sys.setdefaultencoding("utf-8")
+if sys.version[0] == '2':
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fieldcreator.settings')
 
