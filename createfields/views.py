@@ -15,10 +15,12 @@ import datetime
 from time import sleep
 import sys
 import traceback
+from importlib import reload
 
-reload(sys)
-sys.setdefaultencoding("utf-8")
-
+if sys.version[0] == '2':
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
+	
 def index(request):
 	"""
 		Controller for the index/landing page.
