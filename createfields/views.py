@@ -41,6 +41,7 @@ def index(request):
 				oauth_url = 'https://test.salesforce.com/services/oauth2/authorize'
 
 			# Set up URL based on Salesforce Connected App details
+			print(oauth_url)
 			oauth_url = oauth_url + '?response_type=code&client_id=' + settings.SALESFORCE_CONSUMER_KEY + '&redirect_uri=' + settings.SALESFORCE_REDIRECT_URI + '&state='+ environment
 			
 			# Re-direct to login page
