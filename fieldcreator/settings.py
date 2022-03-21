@@ -11,12 +11,12 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = os.environ.get('SECRET_KEY', 'ABC123')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', '0') == '1'
+DEBUG = os.environ.get('DEBUG', '1') == '1'
 TEMPLATE_DEBUG = DEBUG
 THUMBNAIL_DEBUG = DEBUG
 
 ADMINS = (
-    ('Ben Edwards', 'ben@edwards.nz'),
+    ('Alan DePew', 'alan@ohiovalleyconsulting.com'),
 )
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
